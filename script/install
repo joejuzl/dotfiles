@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+# Set osx defaults
+# Install homebrew
+# Install from Brewfile
+# Run install file for each topic
+
+install_topics() {
+  # Set macOS defaults
+  macos/set-defaults.sh
+
+  # Install homebrew
+  info_text "Install Homebrew"
+  homebrew/install.sh 2>&1
+
+  # Update homebrew
+  info_text "Brew update"
+  brew update
+
+  # Homebrew install everything in the Brewfile
+  info_text "Brew Bundle"
+  brew bundle
+
+  for installer in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name 'install.sh' -not -path '*.git*')
+  do
+    topic=$(basename $(dirname $installer))
+    info_text "###### $topic ######"
+    (
+      cd ./$topic
+      bash -c ./install.sh
+    )
+  done
+}

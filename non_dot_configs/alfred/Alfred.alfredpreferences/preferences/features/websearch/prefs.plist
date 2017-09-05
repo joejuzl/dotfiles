@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>90937D93-A9D7-4540-813B-DE5246F46109</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>gcomp</string>
+			<key>text</key>
+			<string>Github Compare</string>
+			<key>url</key>
+			<string>https://github.com/firstbanco/umbrella/compare/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>A711E5D9-15DD-4A87-89F4-EF3D7E476711</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>jira</string>
+			<key>text</key>
+			<string>jira</string>
+			<key>url</key>
+			<string>https://firstbanco.atlassian.net/browse/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

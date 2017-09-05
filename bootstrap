@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Run this to set up the system!
+
+cd ~/.dotfiles
+DOTFILES_ROOT=$(pwd -P)
+
+source script/shared
+source script/link
+source script/install
+
+link_all_files
+install_topics

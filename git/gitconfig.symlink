@@ -1,0 +1,37 @@
+[alias]
+	co = checkout
+	br = branch
+	cm = commit
+	st = status
+[user]
+	name = Joe Juzl
+	email = joe.juzl@bambooloans.com
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/joejuzl/.gitignore_global
+	editor = /usr/bin/vim
+[difftool "opendiff"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[rerere]
+	enabled = true
+[rebase]
+	autosquash = true
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 227
+	frag = magenta bold
+	commit = 227 bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -R
+	show = diff-so-fancy | less --tabs=1,5 -R
