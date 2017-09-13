@@ -10,6 +10,7 @@ ask() {
 deploy_csv(){
   local CSV=/Users/joejuzl/Downloads/JIRA.csv
   if [ -f $CSV ]; then
+    open $CSV
     local DROPBOX="/Users/joejuzl/Dropbox (Bamboo Limited)/Dept Development/Production Deploys/2017/$(date +"%Y-%m-%d")_$1.csv"
     echo $DROPBOX
     if ask; then
