@@ -1,8 +1,11 @@
-# first time need to run /usr/local/opt/fzf/install should ideally run automatically if .fzf.zsh doesn't exist
-
-
 # fzf fuzzy matching
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if [ -f "$HOME/.fzf.zsh" ]
+then
+  source ~/.fzf.zsh
+else
+  /usr/local/opt/fzf/install
+fi
 
 # fzf + ag configuration
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
