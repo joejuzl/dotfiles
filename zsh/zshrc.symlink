@@ -1,11 +1,37 @@
+# Zsh History
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
+
+###### Set prompt mode to emacs #######
+set -o emacs
+export WORDCHARS='*?_[]~=&;!#$%^(){}<>'
+
+###### zplug ########
+# set-up
+source ~/.zplug/init.zsh
+# plugins
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+zplug "themes/robbyrussell", from:oh-my-zsh, defer:2
+zplug "plugins/git",   from:oh-my-zsh
+zplug "plugins/brew",   from:oh-my-zsh
+zplug "plugins/bundler",   from:oh-my-zsh
+zplug "plugins/gpg-agent",   from:oh-my-zsh
+# install and source
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+zplug load 
+##### zplug ######
+
+
+###### Dotfiles #########
 # shortcut to this dotfiles path is $ZSHDOT
 export ZSHDOT=$HOME/.dotfiles
-
-# My oh-my-zsh stuff...
-ZSH_THEME="robbyrussell"
-export ZSH=$HOME/.oh-my-zsh
-plugins=(git brew bundler gpg-agent django)
-source $ZSH/oh-my-zsh.sh
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -42,4 +68,4 @@ do
 done
 
 unset config_files
-
+####### Dotfiles ########

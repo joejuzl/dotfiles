@@ -1,3 +1,6 @@
+# first time need to run /usr/local/opt/fzf/install should ideally run automatically if .fzf.zsh doesn't exist
+
+
 # fzf fuzzy matching
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

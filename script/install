@@ -30,4 +30,7 @@ install_topics() {
       bash -c ./install.sh
     )
   done
+
+  # Update zsh plugins 
+  zplug update
 }
