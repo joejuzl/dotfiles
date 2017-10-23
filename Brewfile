@@ -35,6 +35,8 @@ brew 'diff-so-fancy'
 brew 'gnupg'
 brew 'jq'
 brew 'ccat'
+brew 'rg'
+brew 'zplug'
 
 cask 'istat-menus'
 cask 'franz'

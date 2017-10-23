@@ -11,17 +11,23 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'ctrlpvim/ctrlp.vim'
+set rtp+=/usr/local/opt/fzf
+Plugin 'junegunn/fzf.vim'
+Plugin 'mileszs/ack.vim'
+let g:ackprg = 'rg --vimgrep --no-heading'
 
 call vundle#end()
-filetype plugin indent on
-
-" Turn on syntax highlighting
-syntax on
-
 " For plugins to load correctly
 filetype plugin indent on
 
+" Mappings 
+let mapleader = ","
+nmap <Leader>p :Files<CR>
+nmap <Leader>e :Buffers<CR>
+nmap <Leader>f :Ack<Space>
+
+" Turn on syntax highlighting
+syntax on
 
 " Security
 set modelines=0
