@@ -1,11 +1,4 @@
 export PASSWORD_STORE_DIR=.
-# For tmuxinator
-export DISABLE_AUTO_TITLE=true
-
-ask() {
-  read "REPLY?Are you sure? "
-  [[ $REPLY =~ ^[Yy]$ ]]
-}
 
 deploy_csv(){
   local CSV=/Users/joejuzl/Downloads/JIRA.csv
