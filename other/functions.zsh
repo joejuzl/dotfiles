@@ -14,9 +14,9 @@ ask() {
 ze () {
   zeus "$@"
   if [ $? -eq 143 ]; then
+    reset
     echo '########################################################'
-    echo 'Caught a zeus error, reseting TERM and retrying...'
-    export TERM=xterm
-    zeus "$@"
+    echo 'Zeus error caught, terminal has been reset and now retrying the command...'
+    ze "$@"
   fi
 }
