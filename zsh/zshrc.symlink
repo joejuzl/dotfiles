@@ -1,9 +1,4 @@
-# Zsh History
-export HISTFILE=~/.zsh_history
-export HISTSIZE=10000
-export SAVEHIST=10000
-
-###### Set prompt mode to emacs #######
+###### Set prompt mode to emacs ####### TODO: move this to its own file
 set -o emacs
 export WORDCHARS='*?_[]~=&;!#$%^(){}<>'
 
@@ -12,11 +7,13 @@ export WORDCHARS='*?_[]~=&;!#$%^(){}<>'
 source ~/.zplug/init.zsh
 # plugins
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-zplug "themes/robbyrussell", from:oh-my-zsh, defer:2
+zplug "themes/robbyrussell", from:oh-my-zsh, defer:1
 zplug "plugins/git",   from:oh-my-zsh
 zplug "plugins/brew",   from:oh-my-zsh
 zplug "plugins/bundler",   from:oh-my-zsh
 zplug "plugins/gpg-agent",   from:oh-my-zsh
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+
 # install and source
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -27,7 +24,6 @@ fi
 
 zplug load 
 ##### zplug ######
-
 
 ###### Dotfiles #########
 # shortcut to this dotfiles path is $ZSHDOT
@@ -41,7 +37,7 @@ then
   source ~/.localrc
 fi
 
-# all of our zsh files
+# all of the zsh files
 typeset -U config_files
 config_files=($ZSHDOT/**/*.zsh)
 
@@ -69,3 +65,4 @@ done
 
 unset config_files
 ####### Dotfiles ########
+
