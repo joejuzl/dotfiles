@@ -1,2 +1,2 @@
-export LESS=-FXR
+export LESS=-R
 
