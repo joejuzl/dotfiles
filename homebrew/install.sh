@@ -6,3 +6,5 @@ then
 else
   echo 'Homebrew already installed...'
 fi
+
+brew tap farmotive/k8s
