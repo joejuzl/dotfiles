@@ -43,6 +43,7 @@ brew 'kex'
 brew 'stern'
 brew 'kpoof'
 brew 'klog'
+brew 'vim'
 
 cask 'evernote'
 cask 'istat-menus'
