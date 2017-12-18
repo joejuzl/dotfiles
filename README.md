@@ -22,6 +22,15 @@ Run `vagrant up` to provision an osx virtual machine to test this in.
 
 # Things that still need to be done manually
 
+## OSX
+caps lock => ctrl
+
+disable spotlight
+
+finder shortcuts
+
+remove dock items
+
 ## alfred
 activate powerpack 
 
@@ -38,11 +47,8 @@ import settings for rubymine and pycharm
 ## lastpass
 install lastpass mac app
 
-## notational velocity
-sync with simplenotes
-
 ## shiftit
-authorise it
+authorise it in accessibility screen
 
 ## ssh
 generate ssh key
@@ -53,13 +59,5 @@ add to github
 ## projects
 git clone all projects
 
-## OSX
-caps lock => ctrl
-
-disable spotlight
-
-finder shortcuts
-
-remove dock items
 
 
