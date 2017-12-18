@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ -e '/Users/joejuzl/.vim/bundle/Vundle.vim' ]
+if [ -e '/Users/josephjuzl/.vim/bundle/Vundle.vim' ]
 then
   echo 'Vundle already installed...'
 else
