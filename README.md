@@ -34,12 +34,12 @@ remove dock items
 ## alfred
 activate powerpack 
 
-set prefs sync folder to `~/.dotfiles/non_dot_configs/alfred`
+set prefs sync folder to `/Users/josephjuzl/Google Drive/config/alfred`
 
 change shortcut to cmd+space
 
 ## iterm
-set prefs folder to `~/.dotfiles/non_dot_configs`
+set prefs folder to `/Users/josephjuzl/Google Drive/config`
 
 ## jetbrains
 import settings for rubymine and pycharm
