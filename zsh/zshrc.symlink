@@ -1,6 +1,6 @@
 ###### Set prompt mode to emacs ####### TODO: move this to its own file
 set -o emacs
-export WORDCHARS='*?_[]~=&;!#$%^(){}<>'
+export WORDCHARS='*?_[]~&;!#$%^(){}<>'
 
 ###### zplug ########
 # set-up
@@ -13,6 +13,7 @@ zplug "plugins/brew",   from:oh-my-zsh
 zplug "plugins/bundler",   from:oh-my-zsh
 zplug "plugins/gpg-agent",   from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "superbrothers/zsh-kubectl-prompt"
 
 # install and source
 if ! zplug check --verbose; then
