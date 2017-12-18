@@ -38,19 +38,17 @@ import settings for rubymine and pycharm
 ## lastpass
 install lastpass mac app
 
-## franz
-log into all services
-
 ## notational velocity
 sync with simplenotes
 
 ## shiftit
 authorise it
 
-# Automate in future?
-
 ## ssh
 generate ssh key
+
+	ssh-keygen -t rsa
+add to github
 
 ## projects
 git clone all projects
@@ -63,3 +61,5 @@ disable spotlight
 finder shortcuts
 
 remove dock items
+
+
