@@ -67,3 +67,8 @@ done
 unset config_files
 ####### Dotfiles ########
 
+# If not already in tmux...
+# Attach to base tmux session if exits, else create.
+if [ -z ${TMUX+x} ]; then
+  tmux attach -t base || tmux new -s base
+fi
