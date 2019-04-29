@@ -23,6 +23,9 @@ setw -g pane-base-index 1
 # Save tmux commands to history file
 set -g history-file ~/.tmux_history
 
+# Set scroll buffer
+set-option -g history-limit 50000
+
 ##### DESIGN ############################################# {
 set -g status-justify left
 set -g status-bg default

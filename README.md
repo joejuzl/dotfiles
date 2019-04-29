@@ -50,6 +50,12 @@ install lastpass mac app
 ## shiftit
 authorise it in accessibility screen
 
+## Karibiner
+Copy /Users/josephjuzl/Google Drive/config/karabiner.json to ~/.config/karabiner/karabiner.json
+
+## USB overdrive
+Use to set up logitech trackball
+
 ## ssh
 generate ssh key
 
@@ -58,6 +64,5 @@ add to github
 
 ## projects
 git clone all projects
-
 
 

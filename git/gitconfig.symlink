@@ -4,7 +4,7 @@
 	cm = commit
 	st = status
 [user]
-	name = Joe Juzl
+	name = Joseph Juzl
 	email = joejuzl@gmail.com
 [push]
 	default = simple
@@ -35,8 +35,3 @@
 [pager]
 	diff = diff-so-fancy | less --tabs=1,5 -R
 	show = diff-so-fancy | less --tabs=1,5 -R
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
