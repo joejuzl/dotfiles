@@ -1,2 +1,1 @@
-export LESS=-R
-
+export LESS="-SRXF"
