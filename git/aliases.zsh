@@ -8,3 +8,4 @@ alias fbr='git branch | fzf-tmux | tr -d "*" | tr -d "\n"'
 alias fbc='fbr | pbcopy'
 alias fco='fbr | xargs git checkout'
 
+alias gbc='git_current_branch'

@@ -1,9 +1,0 @@
-from tube_transport import tube
-
-import pytz
-
-from datetime import datetime, timedelta
-
-start = pytz.utc.localize(datetime(2017, 2, 1))
-
-end = pytz.utc.localize(datetime(2017, 2, 15))
