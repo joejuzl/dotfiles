@@ -1,5 +1,1 @@
-virtualenv
-virtualenvwrapper
 ipython
-pipenv
-better_exceptions
