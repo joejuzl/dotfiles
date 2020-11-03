@@ -13,14 +13,6 @@ chflags nohidden ~/Library
 # Set a really fast key repeat.
 defaults write NSGlobalDomain KeyRepeat -int 1
 
-# Set the Finder prefs for showing a few different volumes on the Desktop.
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
-
-# Run the screensaver if we're in the bottom-left hot corner.
-defaults write com.apple.dock wvous-bl-corner -int 5
-defaults write com.apple.dock wvous-bl-modifier -int 0
-
 # Dock
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0
