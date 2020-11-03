@@ -42,7 +42,7 @@ change shortcut to cmd+space
 set prefs folder to `/Users/josephjuzl/Google Drive/config`
 
 ## jetbrains
-import settings for rubymine and pycharm
+Sync settings from account
 
 ## lastpass
 install lastpass mac app
@@ -53,16 +53,18 @@ authorise it in accessibility screen
 ## Karibiner
 Copy /Users/josephjuzl/Google Drive/config/karabiner.json to ~/.config/karabiner/karabiner.json
 
-## USB overdrive
-Use to set up logitech trackball
-
 ## ssh
 generate ssh key
 
 	ssh-keygen -t rsa
+
 add to github
 
-## projects
-git clone all projects
+## Python
 
+Install and update global python version using `pyenv`
 
+## Other:
+- change screenshot location
+- install mac command line tools for xcode
+- install google-cloud-sdk

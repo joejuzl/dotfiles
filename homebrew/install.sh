@@ -2,7 +2,7 @@
 
 if test ! $(which brew)
 then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 else
   echo 'Homebrew already installed...'
 fi
