@@ -9,3 +9,6 @@ alias fbc='fbr | pbcopy'
 alias fco='fbr | xargs git checkout'
 
 alias gbc='git_current_branch'
+
+alias grh="git reset --hard"
+alias grs="git reset --soft"
