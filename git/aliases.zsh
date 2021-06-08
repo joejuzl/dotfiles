@@ -10,5 +10,6 @@ alias fco='fbr | xargs git checkout'
 
 alias gbc='git_current_branch'
 
+alias gr="git reset"
 alias grh="git reset --hard"
 alias grs="git reset --soft"
